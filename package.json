@@ -1,0 +1,21 @@
+{
+  "name": "cloud-rendering",
+  "version": "1.0.0",
+  "author": "azerpas",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "googleapis": "^51.0.0",
+    "uuid": "^8.1.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/node": "^14.0.6",
+    "@types/uuid": "^8.0.0",
+    "typescript": "^3.9.3"
+  }
+}
