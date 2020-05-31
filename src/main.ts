@@ -1,5 +1,5 @@
 import sleep from './utils/time'
-import startInstance from './compute'
+import { startInstance } from './compute'
 
 // 1. start GCP instance with UUID to keep trace of status
 // https://cloud.google.com/compute/docs/reference/rest/v1/instances/start#examples

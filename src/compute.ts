@@ -2,9 +2,10 @@ import {google} from 'googleapis'
 import "./lib/env"
 import { v4 as uuidv4 } from 'uuid';
 
-const startInstance = async () => {
+export const startInstance = async () => {
     const compute = google.compute("v1");
-    console.log(`Starting instance: ${process.env.PROJECT_ID}/${process.env.ZONE}/${process.env.INSTANCE}`)
+    console.log(`Starting instance: ${process.env.PROJECT_ID}/${process.env.ZONE}/${process.env.INSTANCE}`);
+    // Getting client
     try {
       const authClient = await google.auth.getClient();
       google.options({auth: authClient});
@@ -12,6 +13,7 @@ const startInstance = async () => {
       console.error(error);
       throw(error);
     }
+    // Starting instance
     try {
       const requestId = uuidv4();
       const res = await compute.instances.start({
@@ -28,4 +30,16 @@ const startInstance = async () => {
     }
 }
 
-export default startInstance
+export const uploadToDrive = async () => {
+  // Getting client
+  try {
+    const authClient = await new google.auth.OAuth2(
+      process.env.GDRIVE_CLIENT_ID, 
+      process.env.GDRIVE_CLIENT_SECRET, 
+      "urn:ietf:wg:oauth:2.0:oob"
+    );
+  } catch (error) {
+    console.error(error);
+    throw(error);
+  }
+}
