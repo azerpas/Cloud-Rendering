@@ -1,5 +1,10 @@
 # DAZ3D Cloud Rendering
 
+Based on this diagram:
+![diagram](https://user-images.githubusercontent.com/19282069/83353497-4137a400-a353-11ea-8414-b2cbeaf773b2.png)
+
+## SETUP
+
 1. If not already done, enable the Compute Engine API
    and check the quota for your project at
    https://console.developers.google.com/apis/api/compute
@@ -27,7 +32,7 @@
 - [ ] HOWTO create basic planned task (on User connection) on Windows Instance     
 - [ ] Create script to render
 - [ ] Upload renders to GDrive 
-   
+
 **Main machine**     
 - [ ] Fetch renders from GDrive
 - [ ] Close RDP connection
