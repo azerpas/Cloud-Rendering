@@ -21,11 +21,13 @@
 **Main machine**     
 - [x] Start Instance with GCP API    
 - [ ] Export scenes to GDrive     
-- [ ] Open RDP connection    
+- [ ] Open RDP connection   
+
 **GCP Instance**    
 - [ ] HOWTO create basic planned task (on User connection) on Windows Instance     
 - [ ] Create script to render
-- [ ] Upload renders to GDrive    
+- [ ] Upload renders to GDrive 
+   
 **Main machine**     
 - [ ] Fetch renders from GDrive
 - [ ] Close RDP connection
