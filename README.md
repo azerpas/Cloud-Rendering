@@ -25,15 +25,17 @@ Based on this diagram:
 ## TODO
 **Main machine**     
 - [x] Start Instance with GCP API    
-- [ ] Export scenes to GDrive     
+- [ ] Zip scenes    
+- [x] Export scenes to Cloud Storage     
 - [ ] Open RDP connection   
 
 **GCP Instance**    
-- [ ] HOWTO create basic planned task (on User connection) on Windows Instance     
+- [ ] HOWTO create basic planned task (on User connection) on Windows Instance    
+- [ ] Retrieve scenes from Cloud Storage 
 - [ ] Create script to render
-- [ ] Upload renders to GDrive 
+- [ ] Upload renders to Cloud Storage 
 
 **Main machine**     
-- [ ] Fetch renders from GDrive
+- [ ] Fetch renders from Cloud Storage
 - [ ] Close RDP connection
 - [ ] Turn off the Instance

@@ -47,11 +47,12 @@ export const uploadToInstance = async () => {
 }
 
 export const createBucket = async () => {
-  const bucketName = "DAZ3D_"+uuidv4();
+  const bucketName = "daz3d_"+Date.now();
   const storage = new Storage();
   
   const [bucket] = await storage.createBucket(bucketName, {
-    location: 'US-CENTRAL1'
+    location: 'US-CENTRAL1',
+    coldline: true
   });
   
   console.log(`Bucket ${bucket.name} created.`);
